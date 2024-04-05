@@ -7,7 +7,7 @@
     --light-text: #9D9D9B;
 }
 
-header {
+.header {
     background-color: var(--orange);
     width: 80%;
     margin: auto;
@@ -24,13 +24,13 @@ header {
     margin-bottom: auto;
 }
 
-header h1, ul, p {
+.header h1, ul, h4 {
     font-family: sans-serif;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-header h1 {
+.header h1 {
     font-weight: bolder;
     font-size: 18px;
     padding-left: 4px;
@@ -38,28 +38,28 @@ header h1 {
     margin-bottom: auto;
 }
 
-header ul {
+.header ul {
     list-style-type: none;
     font-size: 16px;
     padding-left: 2px;
 }
 
-header li {
+.header li {
     display: inline-block;
+    flex-grow: 4;
 }
 
-header li:before {
+.header li:before {
     content: ' | ';
     padding: 5px;
 }
 
-header li:first-child:before {
+.header li:first-child:before {
     content: ' ';
 }
 
-header p {
+.login {
     font-size: 16px;
-    margin-left: 50%;
     font-weight: bold;
 }
 
@@ -79,3 +79,19 @@ header p {
     margin: 5px;
 }
 
+.content h2 {
+    font-size: 16px;
+    color: var(--dark-text);
+    white-space: nowrap;
+}
+
+.content h3 {
+    font-size: 16px;
+    color: var(--light-text);
+    display: inline;
+}
+
+.content p {
+    font-size: 14px;
+    color: var(--light-text);
+}
