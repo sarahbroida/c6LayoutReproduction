@@ -1,1 +1,81 @@
 /* Add screen styles below */
+
+:root {
+    --orange: #FF6600;
+    --background: #F6F6EF;
+    --dark-text: #070706;
+    --light-text: #9D9D9B;
+}
+
+header {
+    background-color: var(--orange);
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding: 2px;
+}
+
+.logo {
+    width: 20px;
+    height: 20px;
+    float: left;
+    border: 2px solid #FFFFFF;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header h1, ul, p {
+    font-family: sans-serif;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header h1 {
+    font-weight: bolder;
+    font-size: 18px;
+    padding-left: 4px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header ul {
+    list-style-type: none;
+    font-size: 16px;
+    padding-left: 2px;
+}
+
+header li {
+    display: inline-block;
+}
+
+header li:before {
+    content: ' | ';
+    padding: 5px;
+}
+
+header li:first-child:before {
+    content: ' ';
+}
+
+header p {
+    font-size: 16px;
+    margin-left: 50%;
+    font-weight: bold;
+}
+
+
+.content {
+    background-color: var(--background);
+    font-family: sans-serif;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.content img {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 5px;
+}
+
